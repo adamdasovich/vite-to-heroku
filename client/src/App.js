@@ -87,6 +87,7 @@ const handleSubmit = async (e) => {
 	// messageDiv.innerHTML = "..."
 	loader(messageDiv)
 
+
 	const response = await fetch('http://localhost:5000', {
 		method: 'POST',
 		headers: {
@@ -96,6 +97,7 @@ const handleSubmit = async (e) => {
 			prompt: data.get('prompt')
 		})
 	})
+
 
 	clearInterval(loadInterval)
 	messageDiv.innerHTML = " "
