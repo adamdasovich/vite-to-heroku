@@ -8,8 +8,7 @@
 	"type": "module",
 	"scripts": {
 	  "server": "nodemon server",
-	  "start": "node server",
-	  "build:ui": "rm -rf build && cd ./client && npm run build --prod && cp -r build ../"
+	  "start": "node server.js"
 	},
 	"keywords": [],
 	"author": "",
