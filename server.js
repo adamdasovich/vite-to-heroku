@@ -15,16 +15,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.get('/*', (req, res) => {
-	res.sendFile(
-		path.join(__dirname, './client/build/index.html'),
-		function (err) {
-			if (err) {
-				res.status(500).send(err)
-			}
-		}
-	)
-})
+app.use(express.static('build'))
 
 app.post('/', async (req, res) => {
 	try {

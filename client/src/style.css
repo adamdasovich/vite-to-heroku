@@ -88,7 +88,7 @@ body {
 
 .message {
   flex: 1;
-
+  
   color: #dcdcdc;
   font-size: 20px;
 
@@ -127,11 +127,12 @@ form {
 textarea {
   width: 100%;
 
-  color: #fff;
+  color: black;
   font-size: 18px;
+  font-weight: bolder;
 
   padding: 10px;
-  background: transparent;
+  background: lightseagreen;
   border-radius: 5px;
   border: none;
   outline: none;
